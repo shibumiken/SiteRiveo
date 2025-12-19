@@ -1,0 +1,93 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 120px;
+    margin: 0; 
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    width: 100vw; /* Растягиваем header на всю ширину экрана */
+}
+
+header.scrolled {
+    background-color: rgba(26, 26, 26, 0.75);
+    backdrop-filter: blur(22.35px); /* Затемнение */
+    margin: 0;
+}
+
+.headerContainer {
+    display: flex;
+    width: 1440px; /* Фиксированная ширина, как на скриншоте */
+    height: 120px;
+    align-items: center;
+    padding-left: 76px;
+    padding-right: 76px;
+    justify-content: space-between;
+}
+
+.headerContainer div {
+    margin: 0px;
+}
+
+.logo_mini {
+    margin: 0px;
+}
+
+.logo_mini img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 342px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+#navbar li {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    min-width: 52px;
+}
+
+.navbar a {
+    display: block;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 128px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 75px;
+    background: #3C5DF9;
+    flex-shrink: 0;
+}

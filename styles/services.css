@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+
+.block-title-image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1088px;
+    height: 90vh;
+    margin-left: 208px;
+    margin-right: 208px;
+    margin-top: 0px;
+}
+
+.figure-career {
+    position: absolute;
+    height: fit-content;
+    justify-self: flex-end;
+    left: 3%;
+}
+
+.text-block-title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    left: 52%;
+}
+
+.title-career {
+    width: 380px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 86px;
+}
+
+/*Блок выбора услуг*/
+.block-services {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 64px 32px 64px;
+    border: none;
+    border-radius: 30px;
+    background-color: #111111;
+}
+
+/*Названия услуг (колонка)*/
+.name-service-column {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    gap: 30px;
+}
+
+.name-service {
+    margin: 0;
+    min-height: 48px;
+    max-height: 96px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.name-service p {
+    margin: 0;
+}
+
+.name-active {
+    color: #3C5DF9;
+    font-weight: 800;
+}
+
+.card-service {
+    display: block;
+    width: fit-content;
+    border: none;
+    border-radius: 30px;
+    padding: 64px;
+    background: rgba(138, 138, 138, 0.05);
+    backdrop-filter: blur(22.35px);
+    background: radial-gradient(48.73% 133.91% at 100% 100%, rgba(255, 230, 219, 0.2) 0%, rgba(31, 32, 35, 0) 100%), radial-gradient(65.38% 121% at 6.66% 14.58%, rgba(60, 93, 249, 0.2) 0%, rgba(31, 31, 31, 0) 100%), rgba(138, 138, 138, 0.05);
+}
+
+.title-service {
+    min-height: 88px;
+    width: 500px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.title-service p {
+    margin: 0;
+}
+
+.text-service {
+    height: 216px;
+    text-align: start;
+    width: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 101px;
+}
+
+.bottom-card-service {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
+}
+
+.icon-service {
+    justify-self: flex-start;
+    margin-right: 239px;
+}
+
+.icon-service img {
+    margin: 0;
+}
+
+.button-contact {
+    display: flex;
+    border-radius: 100px;
+    padding: 20px 40px;
+    background-color: #3C5DF9;
+    font-size: 24px;
+    border: none;
+    justify-self: flex-start;
+}
+
+.button-contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+.name-service:hover {
+    color: #8599ff;
+}

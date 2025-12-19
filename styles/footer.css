@@ -1,0 +1,64 @@
+footer {
+    margin-top: auto;   /* А это прижмёт футер строго вниз, без растяжки и без полоски снизу */
+}
+
+.footer {
+    width: 100%;
+    min-height: 160px;
+    background: #181818;
+
+    margin-top: 135px;
+    padding: 37px 138px;
+    
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 72px;
+    padding: 0;
+}
+
+.col-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+    margin-left: 130px;
+}
+
+.str-names {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+}
+
+.name-company {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+a :hover {
+    text-decoration-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-email {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 15px;
+}
+
+.politics {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 15px;
+}

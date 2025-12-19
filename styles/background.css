@@ -1,0 +1,7 @@
+body {
+    background-image: url("source/background.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #191919;
+}

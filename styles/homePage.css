@@ -1,0 +1,436 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+/*Блок с слоганом и картинкой*/
+.blockTitleImage1 {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    width: 1088px;
+    height: 646px;
+    margin-left: 176px;
+    margin-right: 176px;
+    margin-bottom: 50px;
+}
+
+.figure {
+    position: absolute;
+    height: fit-content;
+}
+
+.textBlockTitle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 393px;
+    color: white;
+    justify-self: flex-end;
+}
+
+.title {
+    width: 695px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 86px;
+}
+
+.nameOfCompany {
+    font-size: 36px;
+    align-self: flex-end;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+/*Строка с преимуществами*/
+.str {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: max-content;
+    will-change: transform;
+    gap: 45px;
+}
+
+.str-views {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.blockText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 360px; 
+    min-width: 360px;
+}
+
+.titleBlock {
+    font-size: 30px;
+    color: white;
+    font-family: Inter; 
+    font-weight: 600; 
+    height: 72px;
+    width: 200px;
+}
+
+.textBlock {
+    font-size: 24px;
+    color: white;
+    opacity: 0.6;
+    font-family: Inter; 
+}
+
+/*Название блока центрированное*/
+.textTitleCenter {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    align-self: center;
+}
+
+/*Название блока*/
+.textTitle {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    align-self: flex-start;
+    margin-left: 418px;
+}
+
+/*Сетка кнопок услуг*/
+.columnServices {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.strServices {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+/*Кнопка услуг*/
+.buttonService {
+    width: 346px;
+    height: 210px;
+    background: #111111;
+    border-radius: 15px;
+    border: none;
+
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    text-align: left;
+    padding: 32px;
+}
+
+.buttonService:hover {
+    background-color: #3C5DF9;
+}
+
+/*Каруселька проектов*/
+.projects-carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none;
+    padding: 0;
+    position: relative;
+}
+.projects-carousel::before,
+.projects-carousel::after {
+    content: "";
+    display: block;
+    flex: 0 0 40px; 
+    height: 1px;
+}
+.projects-carousel::-webkit-scrollbar { display: none; }
+.projects-views {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Карточка проекта*/
+.projectCard {
+    width: 850px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(138, 138, 138, 0.05);
+    backdrop-filter: blur(22.35px);
+    background: radial-gradient(48.73% 133.91% at 100% 100%, rgba(255, 230, 219, 0.2) 0%, rgba(31, 32, 35, 0) 100%), radial-gradient(65.38% 121% at 6.66% 14.58%, rgba(60, 93, 249, 0.2) 0%, rgba(31, 31, 31, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(138, 138, 138, 0.05);
+    padding: 100px;
+}
+
+/*Карточка проекта Strollie*/
+.Strollie {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+}
+
+.column-strollie {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 592px;
+    justify-content: flex-start;
+}
+
+
+.nameStrollie {
+    margin: 0; 
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 35px; 
+}
+
+.textStrollie {
+    margin: 0; 
+    font-family: Inter;
+    font-size: 24px;
+    color: white;
+}
+
+.logo-strollie {
+    display: flex;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.logo-strollie img {
+    display: block; 
+    margin: 0; 
+}
+
+.column2-strollie {
+    width: 400;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*Статус-кнопка (общая)*/
+.status-bar-in-progress {
+    display: flex;
+    border-radius: 100px;
+    border: 1px #DCEE6C;
+    border-style: solid;
+    text-align: center;
+    font-size: 24px;
+    color: #DCEE6C;
+    font-family: Inter;
+    padding: 15px 25px;
+    justify-self: flex-start;
+    margin-bottom: 220px;
+}
+
+.status-bar-done {
+    display: flex;
+    border-radius: 100px;
+    border: 1px #78EB75;
+    border-style: solid;
+    text-align: center;
+    font-size: 24px;
+    color: #78EB75;
+    font-family: Inter;
+    padding: 15px 25px;
+    justify-self: flex-start;
+    margin-bottom: 220px;
+}
+
+/*Кнопка связаться (общая)*/
+.findOut {
+    display: flex;
+    border-radius: 100px;
+    padding: 20px 40px;
+    background-color: #3C5DF9;
+    font-size: 24px;
+    border: none;
+    justify-self: flex-end;
+}
+
+.link {
+    font-family: Inter;
+    color: white;
+    text-decoration: none;
+}
+
+/*Доделать карточки ботсада и СОПа*/
+.nameProject {
+    margin: 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 48px;
+    width: 580px;
+    margin-bottom: 25px; 
+}
+
+/*Доделать карточки ботсада и СОПа*/
+
+/*Стек технологий*/
+.block-technology {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 50px 40px 50px 40px;
+    background-color: #111111;
+    border: none;
+    border-radius: 15px;
+    max-width: fit-content;
+    align-self: center;
+    align-items: center;
+}
+
+.str-technology {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    align-items: flex-start;
+}
+
+.technology-block {
+    display: flex;
+    flex-direction: row;
+    background: rgba(138, 138, 138, 0.05);
+    backdrop-filter: blur(22.35px);
+    background: radial-gradient(48.73% 133.91% at 100% 100%, rgba(255, 230, 219, 0.2) 0%, rgba(31, 32, 35, 0) 100%), radial-gradient(65.38% 121% at 6.66% 14.58%, rgba(60, 93, 249, 0.2) 0%, rgba(31, 31, 31, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(138, 138, 138, 0.05);
+    border: none;
+    border-radius: 100px;
+}
+
+.logo-technology img {
+    display: block;
+    margin: 0;
+}
+
+.logo-rabbitmq {
+    margin: 5px 18px 5px 5px;
+}
+
+.logo-keycloak {
+    margin: 5px 21px 5px 5px;
+}
+
+.logo-postgresql {
+    margin: 5px 11px 5px 5px;
+}
+
+.logo-redis {
+    margin: 5px 29px 5px 5px;
+}
+
+.logo-kotlin {
+    margin: 5px 27px 5px 5px;
+}
+
+.logo-mongodb {
+    margin: 5px 19px 5px 5px;
+}
+
+.logo-js {
+    margin: 5px 14px 5px 5px;
+}
+
+.logo-spring {
+    margin: 5px 23px 5px 5px;
+}
+
+.logo-react {
+    margin: 5px 28px 5px 5px;
+}
+
+.logo-java {
+    margin: 5px 27px 5px 5px;
+}
+
+.name-technology {
+    margin: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+.name-rabbitmq {
+    margin-right: 18px;
+}
+
+.name-keycloak {
+    margin-right: 21px;
+}
+
+.name-postgresql {
+    margin-right: 12px;
+}
+
+.name-redis {
+    margin-right: 29px;
+}
+
+.name-kotlin {
+    margin-right: 28px;
+}
+
+.name-mongodb {
+    margin-right: 20px;
+}
+
+.name-js {
+    margin-right: 14px;
+}
+
+.name-spring {
+    margin-right: 23px;
+}
+
+.name-react {
+    margin-right: 29px;
+}
+
+.name-java {
+    margin-right: 42px;
+}
