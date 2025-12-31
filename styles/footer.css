@@ -35,6 +35,12 @@ footer {
     gap: 30px;
 }
 
+.str-politics {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .name-company {
     margin: 0;
     color: rgba(255, 255, 255, 0.8);

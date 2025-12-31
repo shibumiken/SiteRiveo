@@ -270,3 +270,11 @@ a {
     text-decoration: none;
     color: #111;
 }
+
+.footer a,
+.link-email,
+.politics {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}

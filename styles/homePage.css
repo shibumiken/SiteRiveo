@@ -131,27 +131,62 @@ body {
 
 /*Кнопка услуг*/
 .buttonService {
+    position: relative;
+    overflow: hidden;
     width: 346px;
     height: 210px;
     background: #111111;
     border-radius: 15px;
     border: none;
-
     color: white;
     font-family: Inter;
-    font-style: normal;
     font-size: 30px;
     font-weight: 600;
-
-    display: flex; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    text-align: left;
     padding: 32px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: background-color 0.5s ease;
 }
 
 .buttonService:hover {
     background-color: #3C5DF9;
+}
+
+/* Стили для текста внутри кнопки */
+.buttonService .link {
+    position: relative;
+    z-index: 2;           /* текст поверх эффекта */
+    color: white;
+    text-decoration: none;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: #3C5DF9;           /* можно чуть светлее/темнее по вкусу */
+    transform: scale(0);
+    opacity: 0.4;
+    pointer-events: none;
+    width: 8px;                    /* ещё меньше начальный размер */
+    height: 8px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    will-change: transform, opacity;
+}
+
+.ripple.active {
+    animation: ripple-grow 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes ripple-grow {
+    to {
+        transform: scale(11);
+        opacity: 0;
+    }
 }
 
 /*Каруселька проектов*/
@@ -434,3 +469,35 @@ body {
 .name-java {
     margin-right: 42px;
 }
+
+.logo-container {
+    margin-top: 145px;
+    align-self: center;
+    user-select: none;
+}
+
+.container-mail {
+    margin-top: 100px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.label-mail {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-right: 64px;
+}
+
+.name-mail {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+}
+

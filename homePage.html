@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/cookie.css">
     <link rel="stylesheet" href="styles/background.css">
     <link rel="stylesheet" href="styles/homePage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,14 +86,32 @@
 
     <div class="columnServices">
         <div class="strServices">
-            <button class="buttonService"><a href="services.html" class="link">Разработка программного обеспечения</a></button>
-            <button class="buttonService"><a href="services.html" class="link">Работа с облачными сервисами</a></button>
-            <button class="buttonService"><a href="services.html" class="link">Обеспечение защиты цифровой информации</a></button>
+            <button class="buttonService">
+                <a href="services.html" class="link">Разработка программного обеспечения</a>
+                <span class="ripple"></span>
+            </button>
+            <button class="buttonService">
+                <a href="services.html" class="link">Работа с облачными сервисами</a>
+                <span class="ripple"></span>
+            </button>
+            <button class="buttonService">
+                <a href="services.html" class="link">Обеспечение защиты цифровой информации</a>
+                <span class="ripple"></span>
+            </button>
         </div>
         <div class="strServices">
-            <button class="buttonService"><a href="services.html" class="link">Системная интеграция</a></button>
-            <button class="buttonService"><a href="services.html" class="link">ИТ-консалтинг</a></button>
-            <button class="buttonService"><a href="services.html" class="link">Техническая поддержка 24/7</a></button>
+            <button class="buttonService">
+                <a href="services.html" class="link">Системная интеграция</a>
+                <span class="ripple"></span>
+            </button>
+            <button class="buttonService">
+                <a href="services.html" class="link">ИТ-консалтинг</a>
+                <span class="ripple"></span>
+            </button>
+            <button class="buttonService">
+                <a href="services.html" class="link">Техническая поддержка 24/7</a>
+                <span class="ripple"></span>
+            </button>
         </div>
     </div>
 
@@ -140,7 +159,7 @@
                 </div>
             </div> 
 
-            <!--Доделать карточку СОПа-->
+            <!--Доделать карточку СОПа
             <div class="projectCard SOP">
                 <div class="Strollie">
                     <div class="column-strollie">
@@ -156,7 +175,7 @@
                         <button class="findOut" formaction="strollie.html"><a href="projects.html" class="link">Узнать больше</a></button>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </div>
@@ -210,10 +229,36 @@
         </div>
     </div>
 
+    <div class="logo-container" 
+        oncontextmenu="return false;"
+        ondragstart="return false;"
+        ondblclick="return false;">
+    <img src="styles/source/home_page/big-logo.svg" 
+        style="pointer-events: none; width: 100%; height: auto;">
+    </div>
+
+    <div class="container-mail">
+        <div class="label-mail"><p>Контактная почта:</p></div>
+        <div class="name-mail"><a class="name-mail" href="mailto:main_company@riveo.ru">main_company@riveo.ru</a></div>
+    </div>
+
+    <div class="cookie-notice" id="cookieNotice">
+        <div class="cookie-content">
+            <h3 class="cookie-title">Мы используем cookies</h3>
+    
+            <p class="cookie-text">
+            Продолжая использовать сайт, вы даёте <a href="" target="_blank" class="cookie-link">согласие на обработку</a> cookie-файлов.
+            Если вы не хотите, чтобы данные обрабатывались, просим отключить обработку в настройках вашего браузера или покинуть сайт.
+            </p>
+
+            <button class="cookie-accept-btn" id="acceptCookies">Принять cookie</button>
+        </div>
+    </div>
 
 
     <script src="scripts/scroll-navbar.js"></script>
-    <script src="scripts/popup-send.js"></script>
+    <script src="scripts/rippple-effect.js"></script>
+    <script src="scripts/cookie-accept.js"></script>
     <script src="scripts/swipe-projects.js"></script>
     <script src="scripts/looping-home.js"></script>
 </body>
@@ -232,7 +277,11 @@
         </div>
 
         <a class="link-email" href="">Электронная почта: chtototam@mail.ru</a>
-        <a class="politics" href="">Политика конфиденциальности</a>
+        <div class="str-politics">
+            <a class="politics" href="">Политика конфиденциальности</a>
+            <a class="politics" href="">Согласие на обработку персональных данных</a>
+        </div>
+            
     </div>
 </footer>
 </html>
