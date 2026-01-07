@@ -1,5 +1,5 @@
 footer {
-    margin-top: auto;   /* А это прижмёт футер строго вниз, без растяжки и без полоски снизу */
+    margin-top: auto;  
 }
 
 .footer {
@@ -8,11 +8,13 @@ footer {
     background: #181818;
 
     margin-top: 135px;
-    padding: 37px 138px;
-    
+    padding-top: 37px;
+    padding-bottom: 37px;
+
     justify-self: end;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-container {
