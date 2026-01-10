@@ -2,6 +2,10 @@ footer {
     margin-top: auto;  
 }
 
+img {
+  pointer-events: none;
+}
+
 .footer {
     width: 100%;
     min-height: 160px;
@@ -17,6 +21,11 @@ footer {
     align-items: center;
 }
 
+.container-f {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-container {
     display: flex;
     flex-flow: row nowrap;
@@ -28,7 +37,6 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     gap: 24px;
-    margin-left: 130px;
 }
 
 .str-names {
@@ -69,4 +77,41 @@ a :hover {
     color: rgba(255, 255, 255, 0.8);
     font-family: Inter;
     font-size: 15px;
+}
+
+
+.contacts {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 15px;
+}
+
+.container-info-fond {
+    margin-top: 44px;
+
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-fond {
+    height: 73px;
+    width: 128px;
+}
+
+.text-support {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    font-size: 15px;
+
+    width: 986px;
+    height: 54px;
+}
+
+.contacts p {
+    margin: 0;
 }

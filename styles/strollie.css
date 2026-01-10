@@ -3,6 +3,9 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     align-items: center;
+    
+    min-height: 100vh;
+    margin: 0;
 }
 
 .title-strollie {
@@ -185,7 +188,7 @@ body {
 
 .align-start {
     align-self: flex-start;
-    margin-left: 176px;
+    margin-left: 360px;
 }
 
 .str1 {
@@ -277,4 +280,8 @@ a {
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
+}
+
+p {
+    margin: 0;
 }
